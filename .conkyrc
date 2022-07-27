@@ -1,0 +1,30 @@
+out_to_x no
+own_window no
+out_to_console yes
+double_buffer no
+background no
+
+update_interval 2.0
+
+total_run_times 0
+
+short_units yes
+
+if_up_strictness address
+
+use_spacer left
+
+override_utf8_locale no
+
+cpu_avg_samples 2
+
+TEXT
+/home ${fs_free /home} | \
+${if_up enp0s25}${addr enp0s25} | ${endif}\
+${if_up wlp3s0}${addr wlp3s0} | ${endif}\
+${cpu cpu1}% ${freq_g 1}GHz ${exec sensors | grep -m 1 "Core 0"|awk '{print $3}'} | \
+${cpu cpu2}% ${freq_g 1}GHz ${exec sensors | grep -m 1 "Core 1"|awk '{print $3}'} | \
+RAM ${memperc}% | \
+BATT ${battery BAT0} | \
+${time %a %m.%d.%y} ${time %H:%M} | \
+V ${exec pactl list sinks | grep -m 1 "Volume: " | awk '{print $5}'}

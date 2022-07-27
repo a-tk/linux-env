@@ -1,0 +1,82 @@
+!------------------------------------------------------------------------------!
+! defaults !
+!------------------------------------------------------------------------------!
+Xft.antialias: 1
+Xft.dpi: 96
+Xft.hinting: 1
+Xft.hintstyle: hintfull
+Xft.lcdfilter: lcddefault
+Xft.rgba: rgb
+Xcursor.size: 18
+Xcursor.theme: Human
+Xcursor.theme_core: true
+
+!------------------------------------------------------------------------------!
+! rxvt unicode !
+!------------------------------------------------------------------------------!
+URxvt*iconName: terminal
+URxvt*depth: 32
+URxvt*geometry: 80x45
+URxvt*letterSpace: -1
+URxvt*cursorUnderline: true
+URxvt*saveLines: 65535
+URxvt*scrollBar: true
+URxvt*scrollBar_right: true
+URxvt*scrollBar_floating: true
+URxvt*scrollstyle: plain
+URxvt*font: xft:Inconsolata:size=10,xft:PragmataProPowerline:size=12,xft:Envy Code R:size=12
+URxvt*boldFont: xft:Inconsolata:size=10,xft:PragmataProPowerline:size=12,xft:Envy Code R:size=12
+URxvt.fading: 0
+URxvt.perl-ext-common: default,matcher,tabbedex,clipboard
+URxvt.url-launcher: /usr/bin/xdg-open
+URxvt.matcher.button: 1
+URxvt.tabbed.autohide: true
+URxvt.tabbed.no-tabbedex-keys: true
+URxvt.keysym.Shift-Left: perl:tabbedex:prev_tab
+URxvt.keysym.Shift-Right: perl:tabbedex:next_tab
+URxvt.keysym.Control-t: perl:tabbedex:new_tab
+URxvt.clipboard.autocopy: true
+!base00 == dark grey
+!base01 == light grey
+!base03 == brown orange
+!base04 == aqua blue
+!base05 == forest green
+!base06 == cream
+!base07 == desert green
+!base08 == ocean blue
+#define S_base00 #2B2B2B
+#define S_base01 #a9b7c6
+#define S_base02 #cc7832
+#define S_base03 #259185
+#define S_base04 #629755
+#define S_base05 #fec66c
+#define S_base06 #a6c25c
+#define S_base07 #9876aa
+#define S_base08 #5859b7
+#define S_black  #000000
+#define S_white  #FFFFFF
+
+!! Mini-darcula
+URxvt.background:  S_base00
+URxvt.foreground:  S_base01
+URxvt.color0:      S_base00
+URxvt.color1:      S_base01
+URxvt.color2:      S_base02
+URxvt.color3:      S_base03
+URxvt.color4:      S_base04
+URxvt.color5:      S_base05
+URxvt.color6:      S_base06
+URxvt.color7:      S_white
+URxvt.color8:      S_base01
+URxvt.color9:      S_base02
+URxvt.color10:     S_base03
+URxvt.color11:     S_base04
+URxvt.color12:     S_base05
+URxvt.color13:     S_base06
+URxvt.color14:     S_base07
+URxvt.color15:     S_base08
+
+URxvt.tabbed.tabbar-fg: 4
+URxvt.tabbed.tabbar-bg: 0
+URxvt.tabbed.tab-fg:    0
+URxvt.tabbed.tab-bg:    4
