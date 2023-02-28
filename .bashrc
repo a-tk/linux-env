@@ -94,25 +94,15 @@ fi
 # ~/.bash_aliases, instead of adding them here directly.
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
 
-if [ -f $COLLEGE_DIR/environment/.bash_aliases ]; then
-    . $COLLEGE_DIR/environment/.bash_aliases
+if [ -f $HOME/.bash_aliases ]; then
+    . $HOME/.bash_aliases
 fi
 
 
 # look for useful function definitions
 
-if [ -f $COLLEGE_DIR/environment/.bash_functions ]; then
-    . $COLLEGE_DIR/environment/.bash_functions
-fi
-
-#add college bin to path
-if [ -f $COLLEGE_DIR/bin ]; then
-    export PATH=$PATH:$COLLEGE_DIR/bin
-fi
-
-#add CUDA to the path
-if [ -f /usr/local/cuda/bin ]; then
-    export PATH=$PATH:/usr/local/cuda/bin
+if [ -f $HOME/.bash_functions ]; then
+    . $HOME/.bash_functions
 fi
 
 

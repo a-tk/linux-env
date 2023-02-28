@@ -1,3 +1,4 @@
 #!/bin/bash
 
-cp -ri $COLLEGE_DIR/environment/home_dir/* ~/
+cp -ri ./.bash* ~/
+cp -ri ./.vim* ~/
