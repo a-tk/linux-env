@@ -116,3 +116,16 @@ fi
 
 export LD_LIBRARY_PATH=./:./lib/
 
+# Install Ruby Gems to ~/gems
+export GEM_HOME="$HOME/gems"
+export PATH="$HOME/gems/bin:$PATH"
+
+if [ -e $HOME/VSCode-linux-x64 ]; then
+    export PATH="$HOME/VSCode-linux-x64:$PATH"
+fi
+
+if [ -e $HOME/node/node-v18.14.2-linux-x64 ]; then
+    export PATH="$HOME/node/node-v18.14.2-linux-x64/bin:$PATH"
+fi
+
+
